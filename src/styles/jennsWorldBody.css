@@ -1,0 +1,8 @@
+.jw--wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    font-family: PPRADERBOLD;
+    font-size: 5rem;
+}

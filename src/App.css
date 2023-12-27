@@ -1,0 +1,38 @@
+
+.App{
+  /* border: dashed rgb(0, 255, 60) 2px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--body_bground);
+  scroll-behavior: smooth;
+  caret-color: red;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+
+
+@font-face {
+  font-family: PPRader;
+  src: url('/public/font/PPRader-Regular.otf');
+}
+
+@font-face {
+  font-family: PPRaderBold;
+  src: url('/public/font/PPRader-Bold.otf');
+}
+
+@font-face {
+  font-family: Apfel;
+  src: url('/public/font/ApfelGrotezk-Regular.otf');
+}
+
+
+
+/*fewfwefwefwfewf */ 

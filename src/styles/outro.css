@@ -1,0 +1,99 @@
+.outro--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: -40px;
+    background-color: var(--accent_color);
+    color: var(--secondary_text);
+    font-family: PPRaderBold;
+    z-index: 2;
+    width: 100%;
+    padding: 4rem 0 1.5rem 0;
+}
+.outro--content{
+    font-size: clamp(7rem, 10vw, 10rem);
+    width: 90%;
+    margin: 0 3rem 0 3rem;
+    min-height: 40vh;
+}
+.outro--slide {
+    --gap: 20px; 
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    font-size: 1.2rem; 
+    text-transform: uppercase;
+    gap: var(--gap);
+    border: solid .3px var(--card_color);
+    color: var(--secondary_text);
+}
+
+
+
+.outro--text{
+    max-height: fit-content;
+    font-size:clamp(6rem, 10vw, 10rem);
+}
+
+.slide{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+}
+.slide span{
+    color: white;
+    margin: 0 0px 0 20px;
+
+}
+.slide{
+    white-space: nowrap;
+    animation: slide 20s linear infinite; 
+    gap: 20px;
+    text-decoration: none;
+    
+}
+.slide a{
+    text-decoration: none;
+    color: var(--card_color);
+}
+
+.outro--slide:hover .slide,
+.outro--slide.hovered .slide {
+  animation-play-state: paused;
+  opacity: .5;
+}
+.slide2:hover{
+    animation-play-state: paused;
+}
+.slide2{
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc((-100% - var(--gap))));
+    }
+}
+
+.arrow{
+    margin: 0 5px 0 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .outro--text{
+        max-height: fit-content;
+        font-size:clamp(4rem, 10vw, 10rem);
+    }
+}
+
+
+

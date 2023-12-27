@@ -1,0 +1,181 @@
+.prj1--wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.prjNav{
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 6rem); 
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 1.1rem;
+    padding: 1.1rem 0;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    /* background-color: red; */
+}
+
+.prjNav a{
+    text-decoration: none;
+    font-family: Apfel, Arial, Helvetica, sans-serif;
+}
+
+.prjNav a:hover{
+    text-decoration: underline;
+}
+
+.nextLink{
+    position: absolute;
+    right: 3rem;
+}
+
+
+.prj-header{
+    border-radius: 2rem;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+
+.prj-preview{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+    border-bottom: 1px black solid;
+
+}
+
+.prj-left{
+    width: 40%;
+    padding: 10px;
+    margin-left: 3.5rem;
+    /* background-color: green; */
+}
+
+.prj-title{
+    font-family: PPRaderBold;
+    font-size: clamp(4rem, 8vw, 7rem);
+}
+
+.prj-summary{
+    font-family: Apfel;
+}
+
+.prj-top{
+    display:flex; 
+    flex-direction: row;
+    /* background-color: blue; */
+    border-bottom: 1px solid black;
+    padding-bottom: 10px; 
+}
+.prj-right{
+    display: flex;
+    flex-direction: column;
+    /* background-color: orange; */
+    padding: 10px;
+    width: calc(70%-3.5rem);
+    margin-right:3.5rem;
+    
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 4px;
+    /* background-color: blue; */
+}
+.top-left, .top-right{
+    width: 50%;
+}
+.top-right{
+    margin-left: 4px;
+    /* background-color: greenyellow; */
+}
+
+.prj-stitle{
+    font-family: Apfel, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.prj-caption{
+    font-style: italic;
+
+}
+
+.prj-cta{
+    margin-top: 10px ;
+    width:max-content;
+    max-width: 100%;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 20px;
+}
+.prjLink{
+  text-decoration: none;
+}
+
+.prjLink:hover{
+    opacity: .5;
+}
+
+
+.githublogo{
+    width: 50px;
+}
+.githublogo:hover{
+    opacity: .5;
+}
+
+.pix-sub.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.font-des{
+    background-color: orange;
+}
+
+
+@media screen and (max-width: 800px) {
+    .prj-header{
+        margin-bottom: 0rem;
+    }
+    
+    .prj-preview{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .prj-left{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .prj-summary{
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    .prjNav{
+        font-size: 1.3rem;
+    }
+    .prj-right{
+        margin: 0;
+        padding:0;
+        width: 100%;
+    }
+    .prj-cta{
+        text-align: center;
+    }
+}

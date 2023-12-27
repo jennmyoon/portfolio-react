@@ -1,0 +1,151 @@
+
+.about--wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background-color: var(--card_color);
+    z-index: 25;
+    border-radius: 6vh;
+    box-shadow: 0 2px 25px 2px var(--card_color);
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.about--content{
+    margin: 2rem;
+
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.left-about{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    max-height: 100%;
+    /* background-color: white; */
+}
+.about--title{
+    color: var(--secondary_text);
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-family: PPRaderBold, sans-serif;
+    text-align: center;
+
+}
+
+.profilepic{
+    position: relative;
+    display: flex;
+    max-height: 50%;
+    width: clamp(4rem, 100%, 25vw);
+    justify-content: center;
+    /* height: auto; */
+    /* background-color: green; */
+
+}
+
+
+.cartoonpic,
+.realpic{
+    max-width: 90%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.cartoonpic{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profilepic:hover .cartoonpic{
+    opacity:0;
+}
+
+.profilepic:hover .realpic{
+    opacity: 1;
+}
+
+.about-subtitle.one{
+    font-family: Apfel;
+    font-weight: bold;
+    color: var(--card_color);
+    font-size: 17px;
+    border-radius: 15px;
+    padding: 0 9px; 
+    padding-bottom: 2px;
+    margin-bottom: 1rem;
+    background-color: var(--accent_color);
+    justify-self: center;
+}
+.right-about{
+    font-family: Apfel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 90%;
+    color: var(--secondary_text);
+}
+.description{
+    padding: 1rem;
+    font-size: 18px;
+}
+.description span{
+    font-family: PPRaderBold;
+    color: var(--accent_color);
+    font-size: 40px;
+    line-height: 1;
+}
+.right-about img{
+    max-height: 50vh;
+    max-width: 90%;
+    min-width: 40vh;
+    border-radius: 12px;
+    border: solid 2px var(--accent_color)
+}
+.about-subtitle{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary_text);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .about--wrap{
+        height: auto;
+    }
+    .about--content{
+        flex-direction: column;
+    }
+    .left-about{
+        width: 90%;
+        height: 30rem;
+    }
+    .profilepic{
+        height: 40rem;
+        width: auto;
+    }
+    .cartoonpic,
+    .realpic{
+        height: 100%;
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+    .right-about{
+        width: 90%;
+    }
+}

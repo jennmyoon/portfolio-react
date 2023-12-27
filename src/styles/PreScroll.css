@@ -1,0 +1,346 @@
+.PreScroll-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+.ps-title{
+    z-index: 2;
+    width: 100%;
+    margin-top: 6rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    font-family: PPRaderBold, sans-serif;
+    font-size: clamp(2rem, 4rem, 100rem);
+    color: var(--main_text);
+    overflow: hidden;
+    height: 100vh;
+    width: calc(100vw - 6rem);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ps-header{
+    position: fixed;
+    top: 1rem; 
+    left: 1.5rem;
+    line-height: clamp(4rem, 5.5rem, 15vw);
+    font-size: clamp(4rem, 5.5rem, 15vw);
+
+}
+.ps-wordBank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    height: 90vh;
+    width: 100%;
+
+}
+
+.wb-rowOne{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    height: 30%;
+    overflow: hidden;
+}
+
+
+
+.wordOne{
+    display: flex;
+    align-items: center;
+    padding: 0rem 4vw 0rem;
+    height: clamp(1rem, 70%, 9rem);
+    border-radius: 90px;
+    font-size: clamp(4rem, 9vw, 6rem);
+
+}
+.starOne{
+    margin-left: 3rem;
+    font-size: 10vh;
+}
+.wordTwo{
+    display: flex;
+    margin-left: 8vw;
+    font-size: clamp(4rem, 6vw, 7rem); 
+}
+
+.wordThree{
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: clamp(5rem, 4vw, 7rem);
+    padding: 0rem 4vw 0rem;
+    height: clamp(2rem, 70%, 9rem);
+    border-radius: 90px;
+}
+
+.wb-rowTwo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    height: 20%;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.r2-wordTwo{
+    align-items: center;
+    /* width: calc(100%/3); */
+    text-align: center;
+
+    font-size: clamp(3rem, 3vh, 6rem);
+    margin-right: 2rem;
+}
+
+.r2-wordOne{
+    align-items: center;
+    /* width: calc(100%/3); */
+    text-align: center;
+
+    font-size: clamp(3rem, 3vh, 6rem);
+    margin-right: 2rem;
+}
+
+.r2-wordThree{
+    align-items: center;
+    /* width: calc(100%/3); */
+    display: flex;
+    font-size: clamp(5rem, 6vw, 9rem);
+    padding: 0rem 4vw 0rem;
+    height: clamp(1rem, 100%, 9rem);
+    border-radius: 90px;
+    margin-right: 2rem;
+}
+.wb-rowThree{
+    margin-top: 1rem;
+    width: 98%;
+    border: 1px solid var(--accent_color);
+    display: flex;
+    align-items: center;
+    height: 25%;
+    overflow: hidden;
+    justify-content: space-evenly;
+    border-radius: 80px;
+    font-size: 3rem;
+}
+
+.r3-star{
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+.ps-text{
+    font-family: PPRaderBold, Arial, Helvetica, sans-serif;
+    font-size: clamp(4rem, 8vw, 14rem);
+}
+
+.ps-text.first{
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+    top: 4rem;
+    width: auto;
+    margin-left: 0rem;
+    transition: position 2s ease;
+}
+
+
+.ps-text.second{
+    visibility: hidden;
+}
+/* 
+.transition{
+    transition: all 5s ease;
+} */
+
+
+
+/* .visible{
+    height:  100%;
+}
+
+.hidden{
+    height: 0;
+} */
+
+/* .ps-title span:hover{
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: rgba(186, 59, 59, 0);
+    text-shadow: 4px 4px 9px rgba(255, 255, 255, 0.575);
+} */
+
+.PreScroll-wrapper .ps-title.show{
+    height: 15vw;
+}
+
+.scroll-w {
+    font-family: PPRaderBold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 6rem;
+    border-left: solid var(--accent_color) .5px;
+    font-size: 6rem; 
+}
+
+.scroll{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--accent_color);
+}
+
+.scroll span{
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    animation: side-slide 5s linear infinite;
+}
+
+.scroll2 span{
+    animation-delay: -2.5s;
+}
+
+
+@keyframes side-slide{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+} 
+
+
+
+
+/* @media screen and (max-width: 401px) {
+    .ps-header{
+        font-size: 4.2rem;
+    }
+    .wordOne{
+        height: clamp(4rem, 20%, 9rem);
+        font-size: clamp(3rem, 6vw, 6rem);
+    }
+    .wordTwo{
+        font-size: clamp(2rem, 3vw, 6rem);
+    }
+    .wordThree{
+        height: clamp(2rem, 25%, 9rem);
+    }
+
+    .r2-wordTwo, .r2-wordOne{
+        font-size: clamp(2rem, 3vh, 6rem);
+    }
+
+    .r2-wordThree{
+        font-size: clamp(1rem, 6vw, 9rem);
+        padding: 0rem 2vw 0rem;
+        height: clamp(1rem, 50%, 9rem);
+        border-radius: 90px;
+    }
+
+    .wb-rowTwo{
+        height: 10%;
+        transform: translateY(-50%);
+    }
+   
+
+    .wb-rowThree{
+        margin-top: 1rem;
+        width: 98%;
+        border: 1px solid var(--accent_color);
+        display: flex;
+        align-items: center;
+        height: 10%;
+        overflow: hidden;
+        justify-content: space-evenly;
+        border-radius: 80px;
+        font-size: 1.4rem;
+    
+    }
+   
+
+} */
+
+@media screen and (max-width: 400px){
+    .ps-header{
+        font-size: 4rem;
+    }
+    .wordOne{
+        padding: 0rem 4vw 0rem;
+        height: clamp(1rem, 40%, 9rem);
+        border-radius: 90px;
+        font-size: clamp(2rem, 6vw, 6rem);
+    
+    }
+    .wordTwo{
+        font-size: clamp(2rem, 3vw, 6rem);
+        margin-right: 2rem;
+    }
+    .wordThree{
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+        font-size: clamp(2rem, 3vw, 7rem);
+        padding: 0rem 4vw 0rem;
+        height: clamp(2rem, 30%, 9rem);
+        border-radius: 90px;
+    }
+
+
+    .r2-wordTwo, .r2-wordOne{
+        font-size: clamp(2rem, 2vh, 6rem);
+    }
+
+    .r2-wordThree{
+        font-size: clamp(3rem, 4vw, 9rem);
+        padding: 0rem 3vw 0rem;
+        height: clamp(1rem, 70%, 9rem);
+        border-radius: 90px;
+    }
+   
+
+    .wb-rowThree{
+        margin-top: 1rem;
+        width: 98%;
+        border: 1px solid var(--accent_color);
+        display: flex;
+        align-items: center;
+        height: 15%;
+        overflow: hidden;
+        justify-content: space-evenly;
+        border-radius: 80px;
+    
+    }
+    
+}

@@ -1,0 +1,196 @@
+.pixelBody--wrap, .artemisBody-wrapper, .jw--wrapper{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.pixelsection, .artsection{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 10rem);
+    margin-bottom: 2rem;
+}
+
+.pixel-subtitle, .art-subtitle{
+    width: clamp(12rem,14vw, 100%);
+    padding: 1rem;
+    font-size: clamp(2rem,28px, 5vw);
+    font-family: PPRaderBold;
+    border-right: solid black 1px;
+    /* color: #ff9977; */
+}
+.section-bottom{
+    width: calc(100% - clamp(12rem,14vw, 100%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.pixel-des, .art-des{
+    border-left: 3px solid #FFA587;
+    border-radius: 2px;
+    width: 100%;
+    /* margin-bottom: 1rem; */
+    padding-left: 10px;
+}
+
+
+
+/*pixel styles */
+.pixelv1{
+    width: 100%;
+}
+.pixel-des.issues{
+    margin-top: 1rem;
+}
+.pixel-des ol{
+    padding-left: 15px;
+    font-family: PPRaderBold;
+}
+
+.pixel-des ol li{
+    font-size: 1.3rem;
+}
+.pixel-des div{
+    font-family: Apfel;
+    font-weight: normal;
+}
+
+.issue-des{
+    margin: 0.3rem;
+}
+.issue-des ul li{
+    font-size: 1rem;
+    font-family: Apfel;
+}
+.issue-des ul li span{
+    color: #ff9977;
+    font-weight: bold;
+}
+.pixelDesign{
+    padding: 1rem 0;
+    margin:  1rem 0 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ff9977;
+}
+.process-body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.design-title{
+    font-size: clamp(2.5rem,44px, 5vw);
+    font-family: PPRaderBold;
+    color: white;
+}
+.design-des{
+    margin-top: .5rem;
+    padding: .5rem;
+}
+.design-subtitle{
+    background-color: white;
+    padding: 3px;
+    border-radius: 16px;
+    font-weight: bold;
+    color: #ff9977;
+}
+.pix-wframe{
+    height: 55rem;
+}
+
+.pix-sub{
+    display: flex;
+    flex-direction: row;
+    font-size: 28px ;
+     
+}
+.font-section{
+    text-align: center;
+    width: clamp(15rem,40px, 50px);
+    font-size: clamp(2rem,20px, 5vw);
+    color: white;
+    font-weight: bold;
+    border-radius: 4rem;
+  
+}
+.pix-sub.two{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.font-pic{
+    width: 70%;
+    display: flex;
+}
+.font-box{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-pic.two{
+    display: flex;
+    width: 60%;
+}
+.font-des{
+    background-color: #ff9977;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .pixelBody--wrap, .artemisBody-wrapper{
+        margin-top: 15px;
+    }
+    .pixel-subtitle, .art-subtitle{
+        border-right: none;
+        width: calc(100% - 32px);
+    }
+    .pixel-des, .art-des{
+        width: 95%;
+        padding-left: 10px;
+    }
+    .pixelsection, .artsection{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .design-subtitle{
+        max-width: 90%;
+        text-align: center;
+        border-radius: 4rem;
+    }
+    .font-section{
+        margin-bottom: 0;
+    }
+    .section-bottom{
+        width: 100%;
+        padding: 0;
+    }
+    .pix-wframe{
+        max-width: 100%;
+        height: auto;
+    }
+    .font-des{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: clamp(1rem,22px,4vw);
+    }
+ 
+}
