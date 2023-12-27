@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.db0b46d9.css",
+    "main.js": "/portfolio-react/static/js/main.ad55086a.js",
+    "static/js/787.59d221f2.chunk.js": "/portfolio-react/static/js/787.59d221f2.chunk.js",
+    "static/media/art-finalrendition.png": "/portfolio-react/static/media/art-finalrendition.3e7edb042f5f37001188.png",
+    "static/media/art-midfi.png": "/portfolio-react/static/media/art-midfi.f0533317ee6caaf4575a.png",
+    "static/media/pixel-wireframe.png": "/portfolio-react/static/media/pixel-wireframe.8f642415d5e2690a1de0.png",
+    "static/media/Artemis-Mockup.png": "/portfolio-react/static/media/Artemis-Mockup.e6eac72e6938a07fc107.png",
+    "static/media/client-moodboard.png": "/portfolio-react/static/media/client-moodboard.c91f170d8ddbee1eee06.png",
+    "static/media/artemis-originalweb.png": "/portfolio-react/static/media/artemis-originalweb.47a82c9f87477996ae39.png",
+    "static/media/art-wireframe1.png": "/portfolio-react/static/media/art-wireframe1.6cb350be5150f5dde9b4.png",
+    "static/media/Pixel-Mockup.png": "/portfolio-react/static/media/Pixel-Mockup.62dfe19658f637f2fdd0.png",
+    "static/media/ArtemisHead.png": "/portfolio-react/static/media/ArtemisHead.0336d0b341b40974f9f3.png",
+    "static/media/placeholder1.png": "/portfolio-react/static/media/placeholder1.fa4567e0bc10f0bd26ff.png",
+    "static/media/jennsworld-mockup.png": "/portfolio-react/static/media/jennsworld-mockup.a0632dc414a5806ce103.png",
+    "static/media/jenworld-header.png": "/portfolio-react/static/media/jenworld-header.bcb99f6e2101b5001f32.png",
+    "static/media/pixel_header.png": "/portfolio-react/static/media/pixel_header.0d620af2e96051dc0606.png",
+    "static/media/egg.JPG": "/portfolio-react/static/media/egg.2ceb7267dfacdb8ff355.JPG",
+    "static/media/Yapari.png": "/portfolio-react/static/media/Yapari.08304cd5bd290a4b58e4.png",
+    "static/media/pixelv1.png": "/portfolio-react/static/media/pixelv1.f55eb253842f8d56b2bb.png",
+    "static/media/PPRader-Regular.otf": "/portfolio-react/static/media/PPRader-Regular.5d7b8b7d1c88b3e97f98.otf",
+    "static/media/PPRader-Bold.otf": "/portfolio-react/static/media/PPRader-Bold.104f372b9eb3d94cc7fc.otf",
+    "static/media/pixel-issues.png": "/portfolio-react/static/media/pixel-issues.c52cbb4ba28d8dc19665.png",
+    "static/media/profile.png": "/portfolio-react/static/media/profile.40e7d240a8362c800d06.png",
+    "static/media/Excelorate.png": "/portfolio-react/static/media/Excelorate.159edb760b6eb886ca22.png",
+    "static/media/designSystem.png": "/portfolio-react/static/media/designSystem.c9a728c2dc03bd5de4f6.png",
+    "static/media/design system2.png": "/portfolio-react/static/media/design system2.8a1483645efd53f28fb7.png",
+    "static/media/prosandcons.png": "/portfolio-react/static/media/prosandcons.b8fbb7bfcf7ce65b9560.png",
+    "static/media/cartoon.png": "/portfolio-react/static/media/cartoon.9f11b1edaa1423fbda0f.png",
+    "static/media/ApfelGrotezk-Regular.otf": "/portfolio-react/static/media/ApfelGrotezk-Regular.7e74d44e751a9dfbd618.otf",
+    "static/media/GitHub_Logo.png": "/portfolio-react/static/media/GitHub_Logo.746ec8f0bc97208f903e.png",
+    "static/media/logo.svg": "/portfolio-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio-react/index.html",
+    "main.db0b46d9.css.map": "/portfolio-react/static/css/main.db0b46d9.css.map",
+    "main.ad55086a.js.map": "/portfolio-react/static/js/main.ad55086a.js.map",
+    "787.59d221f2.chunk.js.map": "/portfolio-react/static/js/787.59d221f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db0b46d9.css",
+    "static/js/main.ad55086a.js"
+  ]
+}
